@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "poetry init hexlet-code"
+version = "0.1.0"
+description = ""
+authors = ["Алиев Сулейман <godevup@gmail.com>"]
+packages = [
+  { include = "brain_games" },
+]
+
+[tool.poetry.scripts]
+brain-games = "brain_games.scripts.brain_games:main"
+brain-even = "brain_games.scripts.brain_even:main"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+prompt = "^0.4.1"
+flake8 = "^6.0.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

@@ -1,2 +1,11 @@
-### Hexlet tests and linter status:
-[![Actions Status](https://github.com/bit-io/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/bit-io/python-project-49/actions)
+## Игра: «Проверка на чётность»
+
+Суть игры в следующем:
+
+Пользователю показывается случайное число. И ему нужно ответить `yes`, если число чётное, или `no` — если нечётное.
+
+Пользователь должен дать правильный ответ на три вопроса подряд
+
+Любой некорректный ввод считается ошибкой
+
+Пример работы скрипта на [видео](https://asciinema.org/a/WMl2YGWbzSXgi1xfRmxionTKb)
