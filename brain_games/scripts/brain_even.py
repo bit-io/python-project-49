@@ -10,25 +10,26 @@ def main():
     count = []
     while True:
         answer, number = question()
-        if answer == 'yes' and number %2 == 0:
+        answer = answer.lower()
+        
+        if answer == 'yes' and is_even(number):
             print('Correct!')
             count.append(answer)
-        elif answer == 'no' and number %2 != 0:
+        elif answer == 'no' and is_even(number):
             print('Correct!')
             count.append(answer)
         else:
             print(f"""'yes' is wrong answer ;(. Correct answer was 'no'. Let's try again, {name}!""")  
             break
         
-        if len(count) > 3:
+        if len(count) > 2:
             print(f"Congratulations, {name}")
             break
 
 
 def is_even(num):
-    if num % 2 == 0:
-        return True
-
+    return num % 2 == 0
+        
 
 def generate_number():
     return random.randint(0, 100)

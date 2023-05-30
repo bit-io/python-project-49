@@ -8,3 +8,5 @@ install:
 	poetry install
 brain-games:
 	poetry run brain-games
+brain-even:
+	poetry run brain-even
