@@ -15,12 +15,12 @@ def main():
         if answer == 'yes' and is_even(number):
             print('Correct!')
             count.append(answer)
-        elif answer == 'no' and is_even(number):
+        elif answer == 'no' and not is_even(number):
             print('Correct!')
             count.append(answer)
         else:
-            print(f"""'yes' is wrong answer ;(. Correct answer was 'no'. Let's try again, {name}!""")  
-            break
+            print(f"""{answer} is wrong answer ;(. Correct answer was {('no','yes')[is_even(number)]}. Let's try again, {name}!""")
+            continue
         
         if len(count) > 2:
             print(f"Congratulations, {name}")
